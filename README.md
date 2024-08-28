@@ -18,7 +18,7 @@ pip install .
 
 
 ```bash
-$ task-waiter -h
+$ waiter -h
 usage: task-waiter [-h] [-m MEM] [-g GPU] [-s] -c CMD [-t TIME] [-vvv]
 
 options:
