@@ -1,39 +1,23 @@
-[tool.poetry]
+[project]
 name = "gpu_waiter"
 version = "0.0.1"
 description = "gpu device moniter and automaticly run commond if device available, just for nvidia gpu."
 readme = "README.md"
-authors = ["lijunjie2232 <2533584225@qq.com>"]
-license = "MIT"
-classifiers = [
-    "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3.10",
+authors = [{name = "lijunjie2232", email = "533584225@qq.com"}]
+maintainers  = [{name = "lijunjie2232", email = "533584225@qq.com"}]
+dependencies = [
+    "nvitop",
 ]
 
-[tool.poetry.dependencies]
-python = "^3.10"
-
-[tool.poetry.group.dev.dependencies]
-pylint = "^2.17.4"
-isort = "^5.12.0"
-pytest = "^7.3.1"
-tox = "^4.5.2"
-mkdocs = "^1.4.3"
-mkdocs-material = "^8.5.11"
-pytest-pylint = "^0.19.0"
-pre-commit = "^3.3.2"
-pytest-mock = "^3.14.0"
-pytest-cov = "^5.0.0"
-
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-[tool.pytest.ini_options]
-testpaths = "tests"
-python_files = "tests.py test_*.py *_tests.py"
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
 
 [tool.pylint.design]
 max-line-length = 120
 
-[tool.poetry.plugins.console_scripts]
-task-waiter = "main:main"
+[tool.setuptools.exclude-package-data]
+pypackage = ["device/*.txt"]
+
+[project.scripts]
+waiter = "gpu_waiter.main:main"
