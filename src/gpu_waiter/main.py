@@ -49,8 +49,6 @@ def main():
     )
     wt = Waiter(args.time, task)
     wt.do_wait()
-    print(os.environ["CUDA_VISIBLE_DEVICES"])
-
 
 if __name__ == "__main__":
     main()
