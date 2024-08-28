@@ -24,6 +24,8 @@ class Waiter:
             taskers (Tasker | list, optional): taskers to run. Defaults to None.
         """
         self.period = period
+        if not taskers:
+            taskers = []
         self.add_task(taskers)
         self.logger = logging.getLogger("wait_logger")
         handler = logging.StreamHandler(sys.stdout)
@@ -42,6 +44,7 @@ class Waiter:
         Args:
             taskers (Tasker | list): tasker or tasker list
         """
+        
         if not isinstance(taskers, list):
             taskers = [taskers]
         for tasker in taskers:

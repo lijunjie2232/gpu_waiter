@@ -33,6 +33,8 @@ class Tasker:
             command (list | str | Callable):
                 command of task, could be list|str|function point,
                 but function point would not support logger.
+                !!! if command is function, it shuold have a key named !!!
+                !!! "logger" in it's params to get tasker logger in    !!!
             stdout (_type_, optional):
                 stdout redirect. Defaults to None.
             stderr (_type_, optional):
