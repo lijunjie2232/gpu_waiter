@@ -3,8 +3,8 @@ name = "gpu_waiter"
 version = "0.0.1"
 description = "gpu device moniter and automaticly run commond if device available, just for nvidia gpu."
 readme = "README.md"
-authors = [{name = "lijunjie2232", email = "533584225@qq.com"}]
-maintainers  = [{name = "lijunjie2232", email = "533584225@qq.com"}]
+authors = [{name = "lijunjie2232", email = "2533584225@qq.com"}]
+maintainers  = [{name = "lijunjie2232", email = "2533584225@qq.com"}]
 dependencies = [
     "nvitop",
 ]
@@ -21,3 +21,7 @@ pypackage = ["device/*.txt"]
 
 [project.scripts]
 waiter = "gpu_waiter.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["gpu_waiter"]
