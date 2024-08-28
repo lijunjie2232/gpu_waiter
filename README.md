@@ -9,6 +9,7 @@ gpu device moniter and automaticly run commond if device available, just for nvi
 ### 2.1 init project
 
 ```bash
+git clone https://github.com/lijunjie2232/gpu_waiter.git
 pip install nvitop
 pip install .
 ```
