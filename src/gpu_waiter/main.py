@@ -2,7 +2,6 @@
 
 import argparse
 import os
-import sys
 
 from gpu_waiter import Tasker, Waiter
 from gpu_waiter.device import NVGPU

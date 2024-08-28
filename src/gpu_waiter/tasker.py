@@ -105,7 +105,7 @@ class Tasker:
                 with process.stdout as process_stdout:
                     for line in iter(process_stdout.readline, b""):
                         self.logger.info(line.decode("utf8").strip("\n"))
-            finish = True
+            self.finish = True
         except Exception as e:
             traceback.print_exc(e)
 
