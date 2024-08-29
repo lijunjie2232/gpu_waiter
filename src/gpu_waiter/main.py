@@ -3,8 +3,7 @@
 import argparse
 import os
 
-from gpu_waiter import Tasker, Waiter
-from gpu_waiter.device import NVGPU
+from . import NVGPU, Tasker, Waiter
 
 
 def get_args() -> argparse.Namespace:
@@ -49,6 +48,7 @@ def main():
     )
     wt = Waiter(args.time, task)
     wt.do_wait()
+
 
 if __name__ == "__main__":
     main()
