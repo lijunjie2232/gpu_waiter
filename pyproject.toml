@@ -9,6 +9,11 @@ dependencies = [
     "nvitop",
 ]
 
+[project.urls]
+Homepage = "https://pypi.org/project/gpu-waiter"
+Repository = "https://github.com/lijunjie2232/gpu_waiter.git"
+Issues = "https://github.com/lijunjie2232/gpu_waiter/issues"
+
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
@@ -21,7 +26,3 @@ pypackage = ["device/*.txt"]
 
 [project.scripts]
 waiter = "gpu_waiter.main:main"
-
-[tool.setuptools.packages.find]
-where = ["src"]
-include = ["gpu_waiter"]
