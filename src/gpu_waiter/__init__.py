@@ -1,5 +1,5 @@
 """gpu-waiter"""
-__version__ = '0.0.3'
+__version__ = '0.0.4'
 from .device import DEVICE, NVGPU
 from .tasker import Tasker
 from .utils import convertFileSize
