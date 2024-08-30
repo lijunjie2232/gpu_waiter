@@ -13,7 +13,7 @@ def get_args() -> argparse.Namespace:
         "--cmd",
         type=str,
         default="",
-        help="command to run; -c could to be not specified; -c could be ignored but command should be posed at the end of shell setence; command could be not string only if -c is ignored",
+        help="""command to run; -c could to be not specified; -c could be ignored but command should be posed at the end of shell sentence; command could be not string only if -c is ignored.""",
     )
     parser.add_argument(
         "-g", "--gpu", type=int, default=1, help="amount of gpu required."
