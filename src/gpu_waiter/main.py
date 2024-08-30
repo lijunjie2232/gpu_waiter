@@ -33,7 +33,7 @@ def get_args() -> argparse.Namespace:
     parser.add_argument("-vvv", "--verbose", action="store_true", help="dump all log.")
     args, argsv = parser.parse_known_args()
     if not args.cmd:
-        assert argsv, "command content should be set and not be empty"
+        assert argsv, "command content should be set and not be empty\n"+parser.format_help()
         args.cmd = []
         for i in argsv:
             args.cmd.extend(i.split(" "))
