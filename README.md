@@ -67,6 +67,7 @@ if __name__ == "__main__":
 
 ```bash
 git clone https://github.com/lijunjie2232/gpu_waiter.git
+cd gpu_waiter
 pip install -e .
 ```
 ---
