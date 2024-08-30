@@ -1,7 +1,7 @@
 [project]
 name = "gpu_waiter"
-version = "0.1.2"
-description = "gpu device moniter and automaticly run command if device available, just for nvidia gpu."
+version = "0.1.3"
+description = "a gpu device moniter could automaticly run command if device available, just for nvidia gpu."
 readme = "README.md"
 authors = [{name = "lijunjie2232", email = "2533584225@qq.com"}]
 maintainers  = [{name = "lijunjie2232", email = "2533584225@qq.com"}]

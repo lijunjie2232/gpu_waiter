@@ -2,7 +2,7 @@
 
 ## 1. Overview
 
-gpu device moniter and automaticly run commond if device available, just for nvidia gpu.
+a gpu device moniter could automaticly run command if device available, just for nvidia gpu.
 
 ## 2. Install & Usage
 
